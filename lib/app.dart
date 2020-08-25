@@ -1,15 +1,22 @@
 import 'package:flutter/material.dart';
-import 'home_page.dart';
+import 'package:change_charity_components/change_charity_components.dart';
+import 'nav.dart';
 
 class Website extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Change Charity Website',
       debugShowCheckedModeBanner: false,
-      theme: lightTheme,
-      home: HomePage(),
+      theme: ChangeTheme(isDark: false).themeData,
+//      home: Navigation("/"),
+      initialRoute: "/",
+      routes: {
+        '/': (context) => Navigation(""),
+        '/home': (context) => Navigation(""),
+        '/org': (context) => Navigation(""),
+      },
     );
   }
 }

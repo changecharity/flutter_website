@@ -9,7 +9,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-import 'package:flutter/gestures.dart';
 
 class HomePage extends StatefulWidget {
   static const String route = '/home';

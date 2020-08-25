@@ -54,39 +54,6 @@ class _OrgPageState extends State<OrgPage> {
     );
   }
 
-  Widget _letsGoButton() {
-    return Container(
-      margin: EdgeInsets.only(top: 35),
-      alignment: Alignment.center,
-      child: SizedBox(
-        width: 150,
-        height: 43,
-        child: RaisedButton(
-          textColor: Colors.white,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.all(Radius.circular(5)),
-          ),
-          elevation: 10,
-          onPressed: () {
-          },
-          color: Colors.lightBlue[400],
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                "Sign Up",
-              ),
-              Icon(
-                Icons.keyboard_arrow_right,
-                color: Colors.white,
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-
   Widget _waitingPicture(mobile) {
     return Container(
       padding: EdgeInsets.only(top: 60),

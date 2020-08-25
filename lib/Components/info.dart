@@ -107,5 +107,6 @@ class Info extends StatelessWidget {
         return _infoContainerChild(context, Icons.dashboard, "Customized Dashboard", "Track your users and donations\nthrough a customized dashboard\nbuilt for you.");
         break;
     }
+    return Container();
   }
 }

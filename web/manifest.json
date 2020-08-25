@@ -1,11 +1,11 @@
 {
-    "name": "flutter_website",
-    "short_name": "flutter_website",
+    "name": "Change Charity Website",
+    "short_name": "Change Charity",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Change Charity is a free and effortless way for non-profits to raise money. We created this company with one goal in mind. Help non-profits generate a passive stable income.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

@@ -44,5 +44,28 @@
     }
   </script>
   <script src="main.dart.js" type="application/javascript"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDxsij9g8OBWjDZWGVxB_z09GgelwSrRx0",
+      authDomain: "change-charity.firebaseapp.com",
+      databaseURL: "https://change-charity.firebaseio.com",
+      projectId: "change-charity",
+      storageBucket: "change-charity.appspot.com",
+      messagingSenderId: "86374138548",
+      appId: "1:86374138548:web:eb60cf5458d70e786f4de1",
+      measurementId: "G-P3T5KF4JSF"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
 </body>
 </html>

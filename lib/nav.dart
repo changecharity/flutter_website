@@ -1,13 +1,12 @@
-import 'dart:js' as js;
-
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:responsive_builder/responsive_builder.dart' as ResponsiveBuilder;
 import 'package:scroll_app_bar/scroll_app_bar.dart';
 
-import 'home.dart';
-import 'about.dart';
-import 'org.dart';
+import 'Actions/functions.dart';
+import 'Pages/home.dart';
+import 'Pages/about.dart';
+import 'Pages/org.dart';
 
 
 class Navigation extends StatefulWidget {
@@ -21,6 +20,7 @@ class Navigation extends StatefulWidget {
 class _NavigationState extends State<Navigation> {
   final _navigatorKey = GlobalKey<NavigatorState>();
   final scrollController = ScrollController();
+  final func = Functions();
 
   int _page = 0;
   String initialRoute;
@@ -37,9 +37,9 @@ class _NavigationState extends State<Navigation> {
       color: Colors.lightBlue,
       index: _page,
       items: <Widget>[
-        Icon(Icons.home, size: 30,color: Colors.white,),
-        Icon(Icons.local_library, size: 30,color: Colors.white),
-//        Icon(Icons.person, size: 30,color: Colors.white),
+        Icon(Icons.home_rounded, size: 30,color: Colors.white,),
+        Icon(Icons.local_library_rounded, size: 30,color: Colors.white),
+        Icon(Icons.person_rounded, size: 30,color: Colors.white),
       ],
       onTap: (index) {
         print(index);
@@ -81,9 +81,9 @@ class _NavigationState extends State<Navigation> {
       titleSpacing: MediaQuery.of(context).size.width*0.05,
       actions: [
         _desktopNavItem('Home', 0),
-        _desktopNavItem('Organization', 1),
+        _desktopNavItem('Charity', 1),
 //        _desktopNavItem('About Us', 2),
-        _desktopNavItem('Organization Login', 3),
+        _desktopNavItem('Charity Login', 3),
       ],
     );
   }
@@ -99,7 +99,7 @@ class _NavigationState extends State<Navigation> {
           onTap: (){
             print(page);
             if(page == 3) {
-              js.context.callMethod("open", ["https://auth.changecharity.io/login"]);
+              func.openOrgLogin();
               return;
             }
             if(_page == page) return;

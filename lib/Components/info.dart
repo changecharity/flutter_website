@@ -89,22 +89,22 @@ class Info extends StatelessWidget {
 
     switch(child) {
       case "home_one":
-        return  _infoContainerChild(context, Icons.star_border, "Donate your spare change", "Change Charity rounds up your${dS}credit${mS}card purchases, and${dS}donates the${mS}difference to${dS}the charity of your choice.");
+        return  _infoContainerChild(context, Icons.star_rounded, "Donate your spare change", "Change Charity rounds up your${dS}credit${mS}card purchases, and${dS}donates the${mS}difference to${dS}the charity of your choice.");
         break;
       case "home_two":
-        return _infoContainerChild(context, Icons.mail_outline, "Tax Deductible Receipts", "Monthly receipts directly to${dS}your mail${mS}box.");
+        return _infoContainerChild(context, Icons.mail_rounded, "Tax-Deductible Receipts", "Monthly receipts delivered directly${dS}to${mS}your mailbox.");
         break;
       case "home_three":
-        return _infoContainerChild(context ,Icons.weekend, "Hassle free experience", "We promise a simple and hassle${dS}free${mS}way to donate. No more ${dS}scanning${mS}receipts or clicking ${dS}buttons. Simply${mS}sign up and${dS}you are all set. ");
+        return _infoContainerChild(context ,Icons.weekend_rounded, "Hassle-free experience", "We promise a simple and hassle${dS}free${mS}way to donate. No more ${dS}scanning${mS}receipts or clicking ${dS}buttons. Simply${mS}sign up and${dS}you are all set. ");
         break;
       case "org_one":
-        return _infoContainerChild(context, Icons.fast_forward, "Simple and Easy Sign-Up", "Sign up and instantly start receiving\ndonations. We handle all the${mS}dirty${dS}work, from sending tax receipts${mS}to${dS}processing donations.");
+        return _infoContainerChild(context, Icons.fast_forward_rounded, "Simple and Easy Sign-Up", "Sign up and instantly start receiving\ndonations. We handle all the${mS}complex${dS}work, from sending tax${mS}receipts to${dS}processing donations.");
         break;
       case "org_two":
-        return _infoContainerChild(context, Icons.scatter_plot, "Custom Qr Code", "Receive a custom QR code, that\nautomatically connects donors to\nyour organization.");
+        return _infoContainerChild(context, Icons.qr_code_rounded, "Custom Qr Code", "Receive a custom QR code that\nautomatically connects donors to\nyour organization.");
         break;
       case "org_three":
-        return _infoContainerChild(context, Icons.dashboard, "Customized Dashboard", "Track your users and donations\nthrough a customized dashboard\nbuilt for you.");
+        return _infoContainerChild(context, Icons.dashboard_rounded, "Customized Dashboard", "Track your users and donations\nthrough a customized dashboard\nbuilt for you.");
         break;
     }
     return Container();

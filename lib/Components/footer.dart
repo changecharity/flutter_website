@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-
+/// Footer for the Change Charity website. Import and use at the bottom of every
+/// page on the site.
 class Footer extends StatelessWidget{
 
   Widget _gotQuestionsTitle(context) {
